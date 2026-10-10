@@ -6,10 +6,6 @@
     <title>Beyond AI Slop · Workshop studio</title>
     <style>
       @font-face {
-        font-family: Fraunces;
-        src: url(fonts/Fraunces-Variable.ttf);
-      }
-      @font-face {
         font-family: Lexend;
         src: url(fonts/Lexend-Variable.ttf);
       }
@@ -69,7 +65,7 @@
         gap: 16px;
       }
       .wordmark {
-        font-family: Fraunces, Georgia, serif;
+        font-family: Lexend, system-ui, sans-serif;
         font-size: 28px;
         color: var(--text);
         text-decoration: none;
@@ -93,9 +89,9 @@
       }
       .hero h1 {
         font:
-          500 clamp(38px, 5vw, 64px)/1.04 Fraunces,
-          Georgia,
-          serif;
+          500 clamp(38px, 5vw, 64px)/1.04 Lexend,
+          system-ui,
+          sans-serif;
         letter-spacing: -0.035em;
         margin: 0 0 20px;
       }
@@ -145,9 +141,9 @@
       }
       .controls h2 {
         font:
-          500 28px/1.15 Fraunces,
-          Georgia,
-          serif;
+          500 28px/1.15 Lexend,
+          system-ui,
+          sans-serif;
         margin: 0 0 16px;
       }
       .controls h3 {
@@ -234,9 +230,9 @@
       }
       .preview-tools h2 {
         font:
-          500 27px Fraunces,
-          Georgia,
-          serif;
+          500 27px Lexend,
+          system-ui,
+          sans-serif;
         margin: 0;
       }
       .view-actions {
@@ -314,9 +310,9 @@
       }
       .resources h2 {
         font:
-          500 28px Fraunces,
-          Georgia,
-          serif;
+          500 28px Lexend,
+          system-ui,
+          sans-serif;
       }
       .resources p,
       .resources li {
@@ -434,11 +430,279 @@
           scroll-behavior: auto !important;
         }
       }
+      /* Treasury marketing adaptation: the same typography, art and surface treatment. */
+
+      header {
+        max-width: 1440px;
+        margin: auto;
+        border: 0;
+        padding: 22px 28px;
+        background: transparent;
+      }
+      .wordmark {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font:
+          500 23px Lexend,
+          system-ui;
+        letter-spacing: -0.045em;
+      }
+      .wordmark img {
+        width: 40px;
+        height: 40px;
+      }
+      .header-links a {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .header-links a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding-top: 42px;
+      }
+      .hero {
+        position: relative;
+        isolation: isolate;
+        min-height: 345px;
+        padding: 24px 24px 70px;
+        gap: 60px;
+        align-items: center;
+      }
+      .hero:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(
+          60% 90% at 77% 40%,
+          oklch(0.755 0.114 81 / 0.15),
+          transparent 72%
+        );
+      }
+      .hero h1 {
+        font-weight: 440;
+        font-size: clamp(46px, 5.2vw, 76px);
+        letter-spacing: -0.045em;
+        line-height: 1.01;
+        margin: 14px 0 22px;
+      }
+      .hero p {
+        font-size: 14px;
+        line-height: 1.75;
+      }
+      .hero .task {
+        border: 0;
+        border-radius: 24px;
+        padding: 27px 30px;
+        background: linear-gradient(135deg, #ffffffad, #ffffff66);
+        border: 1px solid #5c4d3c1a;
+        box-shadow:
+          inset 0 1px white,
+          inset 0 -1px #0000000a,
+          0 12px 35px -22px #211e1a35;
+        outline: 0;
+        backdrop-filter: blur(20px);
+      }
+      .task strong {
+        font-family: Lexend, system-ui, sans-serif;
+        font-size: 29px;
+        line-height: 1.15;
+        font-weight: 440;
+        letter-spacing: -0.03em;
+        margin-bottom: 13px;
+      }
+      .steps {
+        position: relative;
+        margin-bottom: 32px;
+        justify-content: space-between;
+        padding: 20px 24px;
+        border-top: 1px solid #ddd7cc;
+        border-bottom: 1px solid #ddd7cc;
+        font-size: 13px;
+      }
+      .steps span {
+        font-size: 11px;
+        font-weight: 500;
+        min-width: 21px;
+      }
+      .studio {
+        gap: 32px;
+        grid-template-columns: minmax(340px, 0.85fr) minmax(0, 1.6fr);
+      }
+      .controls {
+        padding: 28px;
+        border-radius: 24px;
+        border: 1px solid #211e1a12;
+        background: linear-gradient(135deg, #ffffffad, #ffffff80);
+        box-shadow:
+          inset 0 1px white,
+          inset 0 -1px #0000000a,
+          0 16px 40px -26px #211e1a2e;
+        backdrop-filter: blur(24px) saturate(1.7) brightness(1.08);
+      }
+      .controls h2,
+      .preview-tools h2,
+      .resources h2 {
+        font-weight: 440;
+        letter-spacing: -0.035em;
+        font-size: 32px;
+      }
+      .controls h3 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 28px;
+      }
+      textarea,
+      input,
+      select {
+        border-radius: 12px;
+        background: #fefdfb;
+        border-color: #ded9d0;
+      }
+      textarea:focus,
+      input:focus,
+      select:focus {
+        border-color: #a87930;
+      }
+      button,
+      .link-button {
+        border-radius: 999px;
+        border-color: #5c4d3c1a;
+        background: linear-gradient(135deg, #ffffffc7, #ffffff80);
+        box-shadow:
+          inset 0 1px white,
+          inset 0 -1px #0000000a,
+          0 1px 3px #211e1a08;
+      }
+      button:hover,
+      .link-button:hover {
+        background: #f7f4ef;
+      }
+      .primary {
+        background: linear-gradient(#ffffff1f, transparent 55%), oklch(0.55 0.12 65);
+        border-color: transparent;
+        color: white;
+        box-shadow:
+          inset 0 0 0 1px #ffffff24,
+          inset 0 1px #ffffff42,
+          0 2px 8px oklch(0.4 0.08 65 / 0.22);
+      }
+      .primary:hover {
+        background: linear-gradient(180deg, #996622, #754716);
+      }
+      #css,
+      .code-disclosure {
+        font-family: ui-monospace, monospace;
+        background: #f7f5f0;
+      }
+      .preview-tools {
+        padding: 2px 0 10px;
+      }
+      .preview-stage {
+        padding: 12px;
+        background: linear-gradient(140deg, #f3eee5, #faf8f3);
+        border-color: #211e1a12;
+        border-radius: 24px;
+        box-shadow:
+          inset 0 1px white,
+          0 18px 46px -28px #211e1a30;
+      }
+      iframe {
+        border-radius: 14px;
+      }
+      .review {
+        padding: 28px 4px;
+      }
+      .review h3 {
+        font-family: Lexend, system-ui, sans-serif;
+        font-size: 26px;
+        font-weight: 440;
+        letter-spacing: -0.03em;
+      }
+      .checks {
+        font-size: 13px;
+        gap: 16px 24px;
+      }
+      .resources {
+        gap: 60px;
+        padding: 52px 24px;
+      }
+      footer {
+        border-color: #ded9d0;
+        padding: 28px;
+      }
+      @media (max-width: 980px) {
+        .studio {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          gap: 30px;
+        }
+        .hero h1 {
+          font-size: 60px;
+        }
+        .hero .task {
+          padding: 24px;
+        }
+      }
+      @media (max-width: 600px) {
+        header {
+          padding: 18px 16px;
+          align-items: flex-start;
+        }
+        .wordmark {
+          font-size: 20px;
+        }
+        .wordmark img {
+          width: 32px;
+          height: 32px;
+        }
+        .header-links {
+          gap: 10px;
+          font-size: 11px;
+        }
+        .hero {
+          padding: 14px 0 36px;
+          gap: 24px;
+          min-height: 0;
+        }
+        .hero h1 {
+          font-size: 52px;
+        }
+        .hero .task {
+          padding: 22px;
+          border-radius: 20px;
+        }
+        .steps {
+          padding: 18px 0;
+          justify-content: flex-start;
+          gap: 12px 24px;
+        }
+        .controls {
+          padding: 22px;
+        }
+        .resources {
+          padding: 36px 0;
+          gap: 24px;
+        }
+        .preview-stage {
+          padding: 6px;
+        }
+        .brand-kicker {
+          font-size: 10px;
+        }
+      }
     </style>
+    <link rel="stylesheet" href="brand.css" />
   </head>
   <body>
     <header>
-      <a class="wordmark" href="https://treasury.sh" target="_blank" rel="noopener">Treasury</a>
+      <a class="wordmark" href="https://treasury.sh" target="_blank" rel="noopener"
+        ><img src="assets/treasury-logo.svg" alt="" />Treasury</a
+      >
       <nav class="header-links" aria-label="Workshop resources">
         <a href="slides.html">Slides</a><a href="downloads/starter.zip" download>Starter code</a
         ><a href="#resources">Help</a>
@@ -447,11 +711,9 @@
     <main>
       <section class="hero">
         <div>
-          <h1>Give AI a<br />point of view.</h1>
-          <p>
-            Beyond AI Slop: Building Better Interfaces With Design Systems<br />HackNC 2026 · Junead
-            Khan
-          </p>
+          <div class="brand-kicker">Treasury at HackNC · A hands-on workshop</div>
+          <h1>Beyond AI Slop.<br /><span class="brand-gold">Designed by you.</span></h1>
+          <p>Build better interfaces with design systems.<br />Junead Khan · Founder, Treasury</p>
         </div>
         <div class="task">
           <strong>Your challenge: redesign Friday.</strong>

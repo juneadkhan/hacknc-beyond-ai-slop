@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Lexend;
+  src: url(fonts/Lexend-Variable.ttf);
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+  --page: #fefdfb;
+  --surface: #fff;
+  --text: #211e1a;
+  --muted: #635e58;
+  --border: #ded9d0;
+  --accent: #85551c;
+  --focus: #176fb3;
+  --soft: #f5f2ec;
+}
+body {
+  background:
+    radial-gradient(66% 560px at 50% -3%, oklch(0.91 0.045 81 / 0.6), transparent 62%),
+    radial-gradient(42% 500px at 88% 2%, oklch(0.755 0.114 81 / 0.28), transparent 64%),
+    radial-gradient(40% 480px at 8% 5%, oklch(0.82 0.079 63 / 0.28), transparent 64%), var(--page);
+  color: var(--text);
+  font-family: Lexend, system-ui, sans-serif;
+}
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font:
+    500 23px Lexend,
+    system-ui;
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: -0.045em;
+}
+.brand-logo img {
+  width: 39px;
+  height: 39px;
+  object-fit: contain;
+}
+.brand-gold {
+  color: #aa7b39;
+  font-style: normal;
+  font-weight: 440;
+  background: linear-gradient(
+    135deg,
+    oklch(0.72 0.1 75) 0%,
+    oklch(0.65 0.12 60) 40%,
+    oklch(0.75 0.08 80) 70%,
+    oklch(0.68 0.11 65) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.brand-kicker {
+  font:
+    400 11px/1.5 Lexend,
+    system-ui;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.brand-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 13px;
+}
+.brand-header nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+.brand-header nav a:hover {
+  text-decoration: underline;
+}
+
+.brand-glass {
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.68), rgb(255 255 255 / 0.4));
+  border: 1px solid rgb(92 77 60 / 0.1);
+  box-shadow:
+    inset 0 1px white,
+    inset 0 -1px rgb(0 0 0 / 0.04),
+    0 1px 2px rgb(0 0 0 / 0.02);
+  backdrop-filter: blur(24px) saturate(1.7) brightness(1.08);
+}

@@ -91,4 +91,4 @@ A signed-out Gemini Flash-Lite session generated a guide and a complete styleshe
 
 Useful live critique: the generated guide named an undefined --surface-gloss token and described spacing without assigning shared spacing variables. The generated CSS improved hierarchy and shared row/filter rules, but repeated hardcoded spacing. Ask students to check whether their stylesheet actually uses the system they described. A model claiming zero friction is not a usability result.
 
-Browser slides and PDF have fixed typography. Editable PowerPoint uses Georgia for display headings and Lexend for body text; Lexend is included in fonts/. Check PowerPoint on the presentation machine if you use it, or use the browser/PDF. The workshop studio uses Treasury's Fraunces/Lexend fonts locally.
+Browser slides and PDF have fixed typography. Editable PowerPoint uses Lexend throughout, following Junead's workshop direction and the live Treasury HackNC page. Lexend is included in fonts/. Check PowerPoint on the presentation machine if you use it, or use the browser/PDF. Desktop PowerPoint rendering has not been tested.
