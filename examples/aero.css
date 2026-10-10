@@ -1,12 +1,70 @@
 /* Aero: optimism and gloss, with dates readable on opaque surfaces. */
-:root { --page: #dff3fa; --surface: #ffffff; --surface-hover: #e5f6fc; --text: #073b55; --text-muted: #3c6378; --border: #8dbbcf; --accent: #08628e; --accent-hover: #074767; --accent-soft: #d7f1fb; --on-accent: #ffffff; --focus: #0b56a5; --font-body: 'Trebuchet MS', system-ui, sans-serif; --font-display: 'Trebuchet MS', system-ui, sans-serif; --type-body: 16px; --type-small: 13px; --type-heading: 26px; --type-metric: 36px; --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 44px; --radius-control: 14px; --radius-panel: 24px; }
-body { background: radial-gradient(ellipse at 20% 0%, #fff 0%, transparent 55%), linear-gradient(160deg, #e8faff, #d4eefb 65%, #ddf2df); }
-.panel { box-shadow: 0 5px 18px #28658212, inset 0 2px #ffffff; }
-.brand-mark, .button-primary { background: linear-gradient(#238fb9, var(--accent)); box-shadow: inset 0 2px #ffffff66, 0 2px 3px #073b551a; }
-.button-primary:hover { background: var(--accent-hover); }
-.bill-section { border-top: 5px solid var(--accent); }
-.brand { font-weight: 700; }
-h1 { font-weight: 700; letter-spacing: -.04em; }
-.bill-icon { border-radius: 50%; background: linear-gradient(#f4fcff, var(--accent-soft)); border: 1px solid var(--border); }
-.bar-chart span { background: linear-gradient(#62b9d5, var(--accent)); }
-.note-section { background: #f1faf3; }
+:root {
+  --page: #dff3fa;
+  --surface: #ffffff;
+  --surface-hover: #e5f6fc;
+  --text: #073b55;
+  --text-muted: #3c6378;
+  --border: #8dbbcf;
+  --accent: #08628e;
+  --accent-hover: #074767;
+  --accent-soft: #d7f1fb;
+  --on-accent: #ffffff;
+  --focus: #0b56a5;
+  --font-body: 'Trebuchet MS', system-ui, sans-serif;
+  --font-display: 'Trebuchet MS', system-ui, sans-serif;
+  --type-body: 16px;
+  --type-small: 13px;
+  --type-heading: 26px;
+  --type-metric: 36px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 44px;
+  --radius-control: 14px;
+  --radius-panel: 24px;
+}
+body {
+  background:
+    radial-gradient(ellipse at 20% 0%, #fff 0%, transparent 55%),
+    linear-gradient(160deg, #e8faff, #d4eefb 65%, #ddf2df);
+}
+.panel {
+  box-shadow:
+    0 5px 18px #28658212,
+    inset 0 2px #ffffff;
+}
+.brand-mark,
+.button-primary {
+  background: linear-gradient(#238fb9, var(--accent));
+  box-shadow:
+    inset 0 2px #ffffff66,
+    0 2px 3px #073b551a;
+}
+.button-primary:hover {
+  background: var(--accent-hover);
+}
+.bill-section {
+  border-top: 5px solid var(--accent);
+}
+.brand {
+  font-weight: 700;
+}
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.bill-icon {
+  border-radius: 50%;
+  background: linear-gradient(#f4fcff, var(--accent-soft));
+  border: 1px solid var(--border);
+}
+.bar-chart span {
+  background: linear-gradient(#62b9d5, var(--accent));
+}
+.note-section {
+  background: #f1faf3;
+}

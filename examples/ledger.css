@@ -1,5 +1,39 @@
 /* Ledger: a calm page for reading dates and amounts. */
-:root { --page: #f4f7f8; --surface: #ffffff; --surface-hover: #edf3f5; --text: #1c303c; --text-muted: #526775; --border: #cbd7dd; --accent: #214e63; --accent-hover: #173b4d; --accent-soft: #e5eff3; --on-accent: #ffffff; --focus: #086cc0; --font-body: 'Segoe UI', system-ui, sans-serif; --font-display: Georgia, serif; --type-body: 15px; --type-small: 13px; --type-heading: 25px; --type-metric: 34px; --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 40px; --radius-control: 5px; --radius-panel: 8px; }
-.bill-section { border-top: 4px solid var(--accent); }
-.note-section { background: var(--accent-soft); border-color: transparent; }
-.due-summary strong { font-family: var(--font-display); }
+:root {
+  --page: #f4f7f8;
+  --surface: #ffffff;
+  --surface-hover: #edf3f5;
+  --text: #1c303c;
+  --text-muted: #526775;
+  --border: #cbd7dd;
+  --accent: #214e63;
+  --accent-hover: #173b4d;
+  --accent-soft: #e5eff3;
+  --on-accent: #ffffff;
+  --focus: #086cc0;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+  --font-display: Georgia, serif;
+  --type-body: 15px;
+  --type-small: 13px;
+  --type-heading: 25px;
+  --type-metric: 34px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --radius-control: 5px;
+  --radius-panel: 8px;
+}
+.bill-section {
+  border-top: 4px solid var(--accent);
+}
+.note-section {
+  background: var(--accent-soft);
+  border-color: transparent;
+}
+.due-summary strong {
+  font-family: var(--font-display);
+}
