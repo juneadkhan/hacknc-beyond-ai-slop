@@ -4,6 +4,8 @@ Open the workshop studio: **https://juneadkhan.github.io/hacknc-beyond-ai-slop/*
 
 You will redesign **Friday**, a fictional student money app. Your goal is to help a student find the bills due before their next paycheck, using a consistent visual system in a style you choose.
 
+The main session uses [Google AI Studio](https://ai.studio/apps/41a59999-3017-4ceb-9f7c-3ce7e1dbbf35). [Follow the two-tab student instructions](ai-studio-student-guide.html): research your own references, write your own brief, and build shared components that appear in Design System and App. The CSS workflow below is a fallback.
+
 ## What you need
 
 A laptop browser and access to an AI chat you already use. The studio itself has no account, installation, API key, or subscription. AI services have their own accounts and free limits. Pair up if access is unavailable. You can complete the design exercise manually using the reference CSS.
@@ -11,7 +13,7 @@ A laptop browser and access to an AI chat you already use. The studio itself has
 ## The exercise, about 15 minutes
 
 1. **Critique the original (2 minutes).** Locate the three bills due before Friday. Note one hierarchy problem and one component inconsistency. Describe the actual failure, such as "the chart attracts more attention than the bill dates."
-2. **Choose your direction (1 minute).** Write a visual brief with an audience, mood, typography, density, and priority. Examples: a campus newspaper; an optimistic 2000s desktop; a dense scientific instrument; a playful student planner. You do not need to copy a reference style.
+2. **Research your direction (4 minutes).** Find your own reference, credit its source, and identify specific choices to explore. Write your own brief with an audience, visual decisions and information priorities.
 3. **Create the system (3 minutes).** Click **Copy system prompt**, paste it into your AI chat, and send it. Review the design guide before accepting it. Paste the guide back into the studio. Ask for purpose, semantic tokens, a type and spacing scale, component rules, interaction states, mobile behavior, and examples.
 4. **Apply the system (5 minutes).** Click **Copy implementation prompt**, send it in the same chat, then paste the full CSS response into the CSS editor. Click **Apply CSS**. The studio preserves the app's markup, data, and JavaScript. Inspect both desktop and 390px mobile previews. Ask for a complete replacement stylesheet if the AI returns only a patch.
 5. **Critique and revise (2 minutes).** Use **Copy critique prompt**, replace its observation placeholder with something you actually saw, and request a focused correction. Example: "At 390px the date wraps below the wrong bill. Keep the amount aligned to its bill and its date readable."
