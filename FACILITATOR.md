@@ -20,7 +20,9 @@ Present the current editable Canva deck. The local browser/PDF/PowerPoint files 
 
 ## Prepare and join
 
-Student starter: https://ai.studio/apps/41a59999-3017-4ceb-9f7c-3ce7e1dbbf35
+Student starter: [tinyurl.com/hacknc-ui](https://tinyurl.com/hacknc-ui)
+
+Show this typed address on Canva slide 16. Students open it directly on their laptops, sign in and remix their own copy.
 
 Landing page: https://juneadkhan.github.io/hacknc-beyond-ai-slop/
 

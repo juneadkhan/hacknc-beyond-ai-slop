@@ -8,7 +8,7 @@ Redesign Friday, a fictional student money app. Create a design system with an A
 
 ## AI Studio workshop path
 
-For the integrated AI coding session, open [the shared AI Studio starter](https://ai.studio/apps/41a59999-3017-4ceb-9f7c-3ce7e1dbbf35) and choose Remix. One project includes Design System and App tabs with shared components/tokens. Research your own references, write your own brief, review a design guide, develop the shared components, then refine the App composition. No preset style prompts are supplied. The workshop shell uses Treasury gold/glass/Lexend; the exercise begins in a deliberately weak purple theme.
+For the integrated AI coding session, open [the shared AI Studio starter](https://tinyurl.com/hacknc-ui) and choose Remix. One project includes Design System and App tabs with shared components/tokens. Research your own references, write your own brief, review a design guide, develop the shared components, then refine the App composition. No preset style prompts are supplied. The workshop shell uses Treasury gold/glass/Lexend; the exercise begins in a deliberately weak purple theme.
 
 Use [AI Studio student instructions](AI-STUDIO-STUDENT-GUIDE.md) and the AI Studio section in [the facilitator guide](FACILITATOR.md). Account access and free limits can differ. The static studio below remains the manual/offline fallback.
 

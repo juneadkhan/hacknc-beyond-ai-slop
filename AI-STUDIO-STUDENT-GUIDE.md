@@ -1,6 +1,8 @@
 # Beyond AI Slop: build in Google AI Studio
 
-Student starter: **https://ai.studio/apps/41a59999-3017-4ceb-9f7c-3ce7e1dbbf35**
+Student starter: **[tinyurl.com/hacknc-ui](https://tinyurl.com/hacknc-ui)**
+
+Type this address in your laptop browser. It opens the AI Studio starter directly.
 
 You will redesign Friday, a fictional student money app. Help a student find the three bills due before Friday and read each date and amount. Choose your own visual style, then make it consistent through a design system.
 

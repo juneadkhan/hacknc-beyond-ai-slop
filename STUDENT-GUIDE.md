@@ -4,7 +4,7 @@ Open the workshop studio: **https://juneadkhan.github.io/hacknc-beyond-ai-slop/*
 
 You will redesign **Friday**, a fictional student money app. Your goal is to help a student find the bills due before their next paycheck, using a consistent visual system in a style you choose.
 
-The main session uses [Google AI Studio](https://ai.studio/apps/41a59999-3017-4ceb-9f7c-3ce7e1dbbf35). [Follow the two-tab student instructions](ai-studio-student-guide.html): research your own references, write your own brief, and build shared components that appear in Design System and App. The CSS workflow below is a fallback.
+The main session uses [Google AI Studio](https://tinyurl.com/hacknc-ui). [Follow the two-tab student instructions](ai-studio-student-guide.html): research your own references, write your own brief, and build shared components that appear in Design System and App. The CSS workflow below is a fallback.
 
 ## What you need
 
