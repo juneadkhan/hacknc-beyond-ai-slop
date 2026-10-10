@@ -1,0 +1,23 @@
+/* Structural and accessibility floor, shared by every style. */
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { font: inherit; cursor: pointer; }
+button, a { touch-action: manipulation; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus, #1656a3); outline-offset: 4px; }
+.skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); z-index: 10; background: white; color: #111; padding: 12px; }
+.skip-link:focus { transform: none; }
+.bill-row { width: 100%; text-align: left; }
+.bill-name small, .bill-date small { display: block; }
+.bill-amount { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.metric, .due-summary strong { font-variant-numeric: tabular-nums; }
+.bar-chart { display: flex; align-items: end; height: 110px; gap: 16px; margin-top: 24px; }
+.bar-chart div { height: 100%; flex: 1; display: flex; flex-direction: column; justify-content: end; align-items: center; gap: 6px; }
+.bar-chart span { display: block; width: 100%; min-height: 8px; }
+.bar-chart small { font-size: 12px; }
+dialog { max-width: min(480px, calc(100vw - 32px)); width: 100%; max-height: calc(100dvh - 32px); overflow: auto; }
+dialog::backdrop { background: #18232a99; }
+.dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+dl { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+dd { margin: 0; text-align: right; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

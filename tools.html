@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beyond AI Slop · tools</title><style>@font-face{font-family:Fraunces;src:url(fonts/Fraunces-Variable.ttf)}@font-face{font-family:Lexend;src:url(fonts/Lexend-Variable.ttf)}*{box-sizing:border-box}body{margin:0;background:#fbfaf7;color:#211e1a;font:16px/1.75 Lexend,system-ui,sans-serif}main{max-width:920px;padding:48px 24px;margin:auto}h1,h2{font-family:Fraunces,Georgia,serif;line-height:1.15;font-weight:500}h1{font-size:44px}h2{font-size:30px;margin-top:40px}a{color:#654613;text-underline-offset:3px}td,th{padding:12px;text-align:left;border-bottom:1px solid #d8d2c8;vertical-align:top}table{border-collapse:collapse;width:100%;font-size:14px}pre{background:#f1ede5;padding:20px;overflow:auto}li{margin:10px 0}nav{display:flex;gap:24px;flex-wrap:wrap}code{font-family:ui-monospace,monospace}a:focus-visible{outline:3px solid #176fb3;outline-offset:4px}@media(max-width:600px){h1{font-size:34px}table{display:block;overflow:auto}}@media print{nav{display:none}body{font-size:11px}main{padding:0}h1{font-size:28px}h2{font-size:20px;margin-top:20px}a{color:inherit}pre{white-space:pre-wrap}table{font-size:10px}}</style><main><nav><a href="index.html">Workshop studio</a><a href="slides.html">Slides</a><a href="student-guide.html">Exercise</a><a href="tools.html">Tools</a></nav><h1>Workshop delivery options</h1>
+<p>Checked October 9, 2026 against primary vendor documentation. Free allowances and account eligibility may change. A signed-out Gemini Flash-Lite session was rehearsed on October 9: guide generation, CSS generation, and application in the studio worked without a subscription or login. The first response also created an unsolicited Canvas; the prompt was tightened to ask explicitly for Markdown only. This is one observed session, not a guarantee of student eligibility, available quota, or whole-room load. No fresh paid-agent account has been tested.</p>
+<h2>Recommended path</h2>
+<p><strong>Workshop studio + an existing AI chat.</strong> Students open one static website; preview, edit, import/export CSS, and download their app without an account. Prompts are copied to their own AI service. The studio itself has no AI integration or usage charges. Hosted preview needs internet initially; the offline ZIP works after download. AI chat requires internet and may require an eligible account. No subscription purchase is part of this exercise.</p>
+<p>The copied prompt includes the fixed sample DOM and current CSS. This avoids manual file uploads, installs, Git cloning, npm builds, and permission grants during a 45-minute session. AI processing happens on the service students choose; the studio makes no AI requests or telemetry calls.</p>
+<h2>Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Free provision</th>
+<th>Account/setup</th>
+<th>Workshop fit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Our browser studio</td>
+<td>Editing, preview, source download; no app account or usage meter</td>
+<td>Open URL, use any existing AI chat</td>
+<td>Default; no environment setup, two prompt stages, offline fallback</td>
+</tr>
+<tr>
+<td>Gemini web chat</td>
+<td>Basic access without a Google AI subscription, subject to changing capacity and feature limits</td>
+<td>Some features work without sign-in; additional features and saved activity need an eligible Google account; school account availability can vary</td>
+<td>Suggested chat link; use text prompts, no paid model or Canvas requirement</td>
+</tr>
+<tr>
+<td>Bolt</td>
+<td>$0; 300K tokens/day and 1M/month; public/private projects; hosting</td>
+<td>Sign in; GitHub import adds GitHub connection/permission steps; desktop Chromium recommended</td>
+<td>Optional for students already using it; the quota is not a promise of a fixed number of revisions</td>
+</tr>
+<tr>
+<td>Replit Starter</td>
+<td>Daily Agent credits up to a monthly cap; Lite build; one free published app</td>
+<td>Replit account; import/remix setup</td>
+<td>Still available, but exact free daily amount is not specified in the cited Starter guide; Plan Mode requires Core; free published link goes down after 30 days</td>
+</tr>
+<tr>
+<td>StackBlitz Personal</td>
+<td>Unlimited public projects and GitHub repositories</td>
+<td>View/edit public projects without GitHub account; GitHub account needed to save/collaborate</td>
+<td>Good optional browser code editor; do not promise included AI prompting</td>
+</tr>
+<tr>
+<td>CodePen Free</td>
+<td>Editor/full/details views</td>
+<td>Free account for saved work</td>
+<td>Good HTML/CSS/JS playground; free signup lists no Collab Mode, Professor Mode, or asset hosting; do not promise included AI</td>
+</tr>
+<tr>
+<td>Clone/download + usual editor</td>
+<td>Workshop source has no dependencies</td>
+<td>Local editor; any separately available AI tool</td>
+<td>Advanced/fallback route; browser-openable HTML, no npm requirement</td>
+</tr>
+</tbody></table>
+<h2>Optional browser-code route</h2>
+<p>The public workshop repository is <strong>juneadkhan/hacknc-beyond-ai-slop</strong>. Download the starter ZIP first. Its index.html runs directly in a browser; style.css and app.js are separate for editing. Do not import the entire Treasury repository.</p>
+<p><strong>StackBlitz:</strong> create a plain HTML/CSS/JS project and paste the starter files. Public GitHub projects can also be opened using StackBlitz&#39;s documented GitHub integration. Saving needs GitHub authentication. Use your usual AI chat separately.</p>
+<p><strong>Bolt/Replit:</strong> import the public workshop repository through the product&#39;s current GitHub flow or add the starter files to a plain web project. Ask it to work only on starter-project/style.css and keep the markup/data/behavior. Verify your account&#39;s free allowance before the session. If import, authentication, or quota takes more than a couple minutes, return to the studio. No deployment or payment is required to present a result.</p>
+<p><strong>CodePen:</strong> use the body markup, style.css, and app.js in the respective panels. The standalone file&#39;s head and CSP are not needed in Pen panels. Native dialog/filter behavior must still be tested. This path is optional and has not been verified with a new free account.</p>
+<h2>Hosting</h2>
+<p>The workshop uses a public, standalone GitHub repository and GitHub Pages. GitHub documents Pages availability for public repositories on GitHub Free. The studio does not upload student work; hosting has its own ordinary security logging.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages availability</a>.</li>
+<li><a href="https://bolt.new/pricing">Bolt pricing</a>: published free caps, checked October 9, 2026.</li>
+<li><a href="https://support.bolt.new/integrations/git">Bolt GitHub integration</a> and <a href="https://support.bolt.new/building/using-bolt/browser-support">browser support</a>.</li>
+<li><a href="https://docs.replit.com/billing/plans/starter-plan">Replit Starter guide</a>: free credits, Lite build, publishing and paid restrictions.</li>
+<li><a href="https://stackblitz.com/pricing">StackBlitz pricing</a> and <a href="https://developer.stackblitz.com/guides/integration/open-from-github">GitHub integration</a>.</li>
+<li><a href="https://codepen.io/accounts/signup/user/free">CodePen free signup/features</a>.</li>
+<li><a href="https://support.google.com/gemini/answer/13275745">Gemini requirements</a> and <a href="https://support.google.com/gemini/answer/16275805">limits</a>.</li>
+</ul>
+<h2>Why not require an all-in-one agent?</h2>
+<p>An integrated agent is convenient for an individual with an established account. For a room of students, account setup, browser requirements, GitHub grants, and used-up free allowances become workshop dependencies. The studio keeps the exercise usable while those differ across students. It also makes design context and human inspection explicit.</p>
+</main></html>

@@ -1,0 +1,10 @@
+/* Signal: a compact instrument panel for scanning numerical information. */
+:root { --page: #112027; --surface: #182c35; --surface-hover: #233d48; --text: #f0f7f9; --text-muted: #b6cbd4; --border: #46616e; --accent: #a8e29c; --accent-hover: #c0eeb6; --accent-soft: #284734; --on-accent: #112027; --focus: #f5db7b; --font-body: 'SFMono-Regular', Consolas, monospace; --font-display: 'SFMono-Regular', Consolas, monospace; --type-body: 14px; --type-small: 13px; --type-heading: 22px; --type-metric: 30px; --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px; --space-6: 28px; --space-7: 36px; --radius-control: 3px; --radius-panel: 3px; }
+h1 { font-size: clamp(27px, 3.5vw, 38px); letter-spacing: -.05em; }
+.bill-section { border-left: 4px solid var(--accent); }
+.bill-icon { background: transparent; border: 1px solid var(--border); }
+.due-summary strong, .metric { color: var(--accent); }
+.bar-chart span { border-radius: 0; }
+.bill-row { min-height: 68px; }
+.brand-mark { border-radius: 0; }
+@media (min-width: 1000px) { .workspace { grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr); } }

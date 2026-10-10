@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Friday starter</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head><body><a class="skip-link" href="#main">Skip to dashboard</a>
+<div class="app-shell">
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">f</span><span>Friday</span></div>
+    <span class="demo-label">Fictional student money app</span>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="page-heading"><div><p class="eyebrow">Saturday, October 10</p><h1>Your money, this week</h1><p class="intro">Next paycheck: Friday, October 16.</p></div><button class="button button-primary" id="jump-bills">Review upcoming bills</button></div>
+    <div class="workspace">
+      <section class="panel bill-section" aria-labelledby="bills-title">
+        <div class="section-heading"><div><p class="eyebrow">Before your next paycheck</p><h2 id="bills-title">Upcoming bills</h2></div><div class="due-summary"><strong>$139.00</strong><span>3 bills before Friday</span></div></div>
+        <div class="filter-group" role="group" aria-label="Filter bills"><button class="button button-secondary" data-filter="all" aria-pressed="true">All bills</button><button class="button button-secondary" data-filter="before" aria-pressed="false">Before payday</button><button class="button button-secondary" data-filter="after" aria-pressed="false">After payday</button></div>
+        <p class="list-help">Select a bill to view its details.</p>
+        <div class="bill-list" id="bill-list"></div>
+        <p id="filter-status" class="filter-status" role="status"></p>
+      </section>
+      <section class="panel balance-section" aria-labelledby="balance-title"><p class="eyebrow" id="balance-title">Checking balance</p><p class="metric">$1,284.00</p><p class="supporting">Snapshot on October 10. A balance does not account for future bills.</p></section>
+      <section class="panel spending-section" aria-labelledby="spending-title"><p class="eyebrow" id="spending-title">Spending last month</p><p class="metric">$987.00</p><p class="supporting">Four weekly totals in September</p><div class="bar-chart" aria-label="Week 1: $270; week 2: $244; week 3: $298; week 4: $175"><div><span style="height:90%"></span><small>W1</small></div><div><span style="height:81%"></span><small>W2</small></div><div><span style="height:100%"></span><small>W3</small></div><div><span style="height:58%"></span><small>W4</small></div></div></section>
+      <section class="panel note-section" aria-labelledby="note-title"><p class="eyebrow">One thing to remember</p><h2 id="note-title">Dates matter</h2><p>Three bills are due before your next paycheck. Review their dates and amounts above.</p><p class="supporting">This exercise uses made-up data. It is not connected to a bank.</p></section>
+    </div>
+  </main>
+  <footer class="app-footer">Friday is a workshop sample, not the Treasury product. All amounts and dates are fictional.</footer>
+</div>
+<dialog id="bill-dialog" aria-labelledby="dialog-title"><form method="dialog"><div class="dialog-header"><h2 id="dialog-title">Bill details</h2><button class="button button-secondary" aria-label="Close bill details">Close</button></div><dl id="bill-details"></dl><p class="supporting">Demo only. No payment will be made.</p></form></dialog>
+</body></html>

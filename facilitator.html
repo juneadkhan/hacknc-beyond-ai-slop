@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beyond AI Slop · facilitator</title><style>@font-face{font-family:Fraunces;src:url(fonts/Fraunces-Variable.ttf)}@font-face{font-family:Lexend;src:url(fonts/Lexend-Variable.ttf)}*{box-sizing:border-box}body{margin:0;background:#fbfaf7;color:#211e1a;font:16px/1.75 Lexend,system-ui,sans-serif}main{max-width:920px;padding:48px 24px;margin:auto}h1,h2{font-family:Fraunces,Georgia,serif;line-height:1.15;font-weight:500}h1{font-size:44px}h2{font-size:30px;margin-top:40px}a{color:#654613;text-underline-offset:3px}td,th{padding:12px;text-align:left;border-bottom:1px solid #d8d2c8;vertical-align:top}table{border-collapse:collapse;width:100%;font-size:14px}pre{background:#f1ede5;padding:20px;overflow:auto}li{margin:10px 0}nav{display:flex;gap:24px;flex-wrap:wrap}code{font-family:ui-monospace,monospace}a:focus-visible{outline:3px solid #176fb3;outline-offset:4px}@media(max-width:600px){h1{font-size:34px}table{display:block;overflow:auto}}@media print{nav{display:none}body{font-size:11px}main{padding:0}h1{font-size:28px}h2{font-size:20px;margin-top:20px}a{color:inherit}pre{white-space:pre-wrap}table{font-size:10px}}</style><main><nav><a href="index.html">Workshop studio</a><a href="slides.html">Slides</a><a href="student-guide.html">Exercise</a><a href="tools.html">Tools</a></nav><h1>Beyond AI Slop: facilitator guide</h1>
+<p><strong>HackNC 2026 · 45 minutes · Junead Khan</strong></p>
+<p>The organizer&#39;s October 6 guide lists Saturday October 10, 3:15–4:00 p.m., Fetzer Classroom 109. Check the day-of schedule when arriving. FLUX Intro to UI/UX is concurrent. Position this as a practical AI-assisted redesign session, useful to projects already in progress.</p>
+<h2>The promise</h2>
+<p>&quot;You will take the same working app, give AI a clear design system, and make it look and feel like something you chose. Then someone else will test it.&quot;</p>
+<p>Do not call the starter an actual output from a particular model. It is a deliberately constructed example of common weak generated-interface patterns. Do not imply the three reference designs are model benchmark results or production Treasury screens.</p>
+<h2>Before students arrive</h2>
+<ul>
+<li>Open slides.html and the studio in separate tabs. Browser deck: left/right arrows, F for fullscreen, N for notes; its Reset timer button starts the exercise countdown. PowerPoint and PDF are included as alternatives.</li>
+<li>Download the offline ZIP, unzip it, and open its index.html as your network fallback. Keep the PowerPoint/PDF locally. Printed or local student guide also works.</li>
+<li>Check projector readability, scaling and Wi-Fi. No runtime install is necessary. Verify the room and schedule on arrival.</li>
+<li>Do one real two-prompt rehearsal with the AI chat you intend to demonstrate. The package&#39;s prepared CSS examples are the reliable fallback; free AI availability and response quality are not guaranteed.</li>
+<li>Ask a helper, if available, to circulate. Pair students when access or experience differs. One laptop and AI account per pair is enough.</li>
+<li>Have the QR/URL slide visible while people arrive. Explain that they can use any AI chat; no purchase is required.</li>
+</ul>
+<h2>Run of show</h2>
+<table>
+<thead>
+<tr>
+<th>Elapsed</th>
+<th>Slides / action</th>
+<th>Facilitation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0–3</td>
+<td>1–2: welcome, URL and task</td>
+<td>Quick hands: who has used an AI coding tool? Who has a browser and an AI chat ready? Pair up immediately.</td>
+</tr>
+<tr>
+<td>3–7</td>
+<td>3–4: original and critique</td>
+<td>Give 30 seconds to find bills due before Friday. Ask for observed failures. Point to competing metric emphasis, inconsistent filters/rows, and bills pushed below secondary content on mobile.</td>
+</tr>
+<tr>
+<td>7–12</td>
+<td>5–7: system, tokens, components</td>
+<td>Explain roles rather than hex codes. Show one shared rule used by every bill row. Change an accent token and show the shared result.</td>
+</tr>
+<tr>
+<td>12–15</td>
+<td>8–9: systems and visual directions</td>
+<td>Carbon and Fluent are complete systems; Radix Primitives supplies unstyled behaviors. Our Ledger, Signal, Aero examples are workshop systems, not copies. Let students choose other directions.</td>
+</tr>
+<tr>
+<td>15–21</td>
+<td>10: live workflow</td>
+<td>Open studio. Write a specific direction. Copy system prompt, send to your AI, inspect guide, paste guide, copy implementation prompt, paste CSS and Apply. Inspect mobile. If generation exceeds ~45 seconds, use prepared CSS and explain the substitution.</td>
+</tr>
+<tr>
+<td>21–33</td>
+<td>11: students build</td>
+<td>Start 12-minute timer. At 3 minutes, ask for a guide; at 6, ask for a visible preview; at 10, ask for mobile and keyboard checks. Pair/troubleshoot.</td>
+</tr>
+<tr>
+<td>33–39</td>
+<td>12: swap and test</td>
+<td>Partners use the screen without explanation. Request two volunteer demos; ask each for one rule and one remaining problem. Include different styles, not just the most polished.</td>
+</tr>
+<tr>
+<td>39–45</td>
+<td>13–14: transfer, export, questions</td>
+<td>Download app/guide. Ask each to name one design rule to apply to their own hack. Mention Treasury access briefly and offer mentoring after.</td>
+</tr>
+</tbody></table>
+<h2>Opening, about 45 seconds</h2>
+<p>&quot;I&#39;m Junead, a UNC alum and the founder of Treasury. Building a money app makes you care about what people can understand at a glance: which number matters, what date it belongs to, and what they can do next. Today we&#39;re going to give AI those decisions explicitly. You&#39;ll redesign the same student money app in your own style, and we will check whether it still helps someone use it.&quot;</p>
+<h2>Critique prompts</h2>
+<p>&quot;What did you notice first? Was it the information you needed?&quot;</p>
+<p>&quot;Why do these three filter buttons look like three different kinds of control?&quot;</p>
+<p>&quot;At mobile width, how far do you scroll before the bills?&quot;</p>
+<p>&quot;If we remove the purple gradient but leave the hierarchy, is the task easier?&quot;</p>
+<p>HackNC&#39;s Aero theme is an opportunity: glossy buttons and gradients can be purposeful. Critique the mismatch between intent and execution, not a blanket ban on visual styles. Never shame students&#39; projects or tastes.</p>
+<h2>Live demonstration script</h2>
+<ol>
+<li>Preview Original. Show the user task and unchanged facts.</li>
+<li>Preview Ledger briefly; explain hierarchy. Signal and Aero demonstrate that consistency does not force everyone into one aesthetic.</li>
+<li>Return to Your CSS. Write an original direction, such as &quot;an optimistic campus planner with Aero gloss; put readable due dates first; compact secondary spending.&quot; Ask the room for a different suggestion if useful.</li>
+<li>Click Copy system prompt. Read its task, direction, and constraints out loud. Send it in your chosen chat. Review whether the returned guide says when to use components, not just a list of colors.</li>
+<li>Paste the guide, copy the implementation prompt, send it, paste CSS, and Apply.</li>
+<li>Inspect at 390px and use Before payday. Open a detail dialog, press Escape, then Tab to inspect focus. An AI statement that it is accessible is not evidence.</li>
+<li>Name one actual failure and use the critique prompt. Replace its observation placeholder before sending. Be honest about model mistakes or lack of a screenshot.</li>
+<li>Download the app. Show that it opens independently with its controls intact.</li>
+</ol>
+<h2>Prepared demonstration if AI is slow</h2>
+<p>Preview Ledger, then Copy reference CSS. Paste into editor and Apply. Explain this is a prepared stylesheet. Edit --accent and --on-accent together, preserving contrast, then apply. Point out affected brand, primary button, bars, and selected filter border. Explain the shared component rules and the visual hierarchy change. This demonstrates system mechanics but does not verify live generation quality.</p>
+<h2>Peer-test answer key</h2>
+<p>Phone plan $62 due October 11; gym $29 due October 13; electricity $48 due October 15. Three bills, $139. Rent is after payday. Asking a neighbor to find this is a brief task test, not formal UX research. Timing or scores should not be presented as a controlled performance comparison.</p>
+<h2>Adaptations</h2>
+<ul>
+<li><strong>Mostly beginners:</strong> pairs; keep markup fixed, use CSS-only prompts, explain :root and one shared selector. Prioritize an applied result over a perfect guide.</li>
+<li><strong>Experienced students:</strong> invite them to use their usual coding agent and the starter project. Add deliberate component variants and a 200% zoom check; do not spend time on environment setup.</li>
+<li><strong>No AI/credits:</strong> reference CSS and manual tokens still support participation. No one needs to buy access during the session.</li>
+<li><strong>No Wi-Fi:</strong> use offline studio and prepared reference CSS. Students write the brief and review rules locally. Explain the demonstration is prepared.</li>
+<li><strong>Only 30 minutes remain:</strong> 3 minutes task/critique, 5 system demo, 4 live/prepared workflow, 12 exercise, 4 swap, 2 export. Cut external system survey first.</li>
+</ul>
+<h2>Discussion references</h2>
+<ul>
+<li><a href="https://raw.githubusercontent.com/MLH/mlh-hackathon-organizer-guide/master/general-information/day-of-logistics-and-hacker-experience/workshops.md">MLH workshop guidance</a>: participation, troubleshooting, beginner support.</li>
+<li><a href="https://workshops.hackclub.com/sprig/">Hack Club Sprig format</a>: brief demo/tool introduction, making, sharing.</li>
+<li><a href="https://carpentries.github.io/instructor-training/17-live.html">The Carpentries live coding</a>: pacing and thinking aloud.</li>
+<li><a href="https://help.figma.com/hc/en-us/articles/38978644498199-AI-workflows-collection-Refine-your-components-and-variables-for-the-Figma-agent">Figma context guidance</a> and <a href="https://help.figma.com/hc/en-us/articles/43602393097239-Write-design-system-guidelines-for-Make-kits">specific guidelines</a>.</li>
+<li><a href="https://carbondesignsystem.com/">Carbon</a>, <a href="https://fluent2.microsoft.design/">Fluent 2</a>, <a href="https://www.radix-ui.com/primitives/docs/overview/introduction">Radix Primitives</a>.</li>
+</ul>
+<p>External guidance motivates this format; there are no measured learning gains for this specific workshop yet. Do not advertise universal improvements in AI output quality.</p>
+<h2>October 9 rehearsal findings</h2>
+<p>A signed-out Gemini Flash-Lite session generated a guide and a complete stylesheet, which applied in the studio at 390px. The before-payday filter preserved the three bills and the exported-app status appeared. The first guide request also created an unsolicited Canvas. We strengthened the guide prompt to explicitly ask for Markdown only, and supplied the runtime bill-row structure to both prompts. The changed guide prompt has not been independently rebenchmarked.</p>
+<p>Useful live critique: the generated guide named an undefined --surface-gloss token and described spacing without assigning shared spacing variables. The generated CSS improved hierarchy and shared row/filter rules, but repeated hardcoded spacing. Ask students to check whether their stylesheet actually uses the system they described. A model claiming zero friction is not a usability result.</p>
+<p>Browser slides and PDF have fixed typography. Editable PowerPoint uses Georgia for display headings and Lexend for body text; Lexend is included in fonts/. Check PowerPoint on the presentation machine if you use it, or use the browser/PDF. The workshop studio uses Treasury&#39;s Fraunces/Lexend fonts locally.</p>
+</main></html>
